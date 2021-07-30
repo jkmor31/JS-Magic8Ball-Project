@@ -4,45 +4,41 @@ const inputName = document.querySelector("#inputName");
 const inputQuestion = document.querySelector("#inputQuestion");
 const para = document.createElement("p");
 
-const userName = 'James';
-userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
-const userQuestion = '';
-console.log(`${userName}'s question is: ${userQuestion}`);
-let randomNumber = Math.floor(Math.random() * 8);
-let eightBall = '';
 
-function generateAnswer() {
+
+
+function findAns(){
+  let randomNumber = Math.floor(Math.random() * 8);
+  let eightBall = '';
+  let text;
   switch (eightBall = randomNumber) {
     case 0:
-      return 'It is certain';
+      text = 'It is certain';
       break;
     case 1:
-      return 'It is decidedly so';
+      text = 'It is decidedly so';
       break;
     case 2:
-      return 'Reply hazy try again';
+      text = 'Reply hazy try again';
       break;
     case 3:
-      return 'Cannot predict now';
+      text = 'Cannot predict now';
       break;
     case 4:
-      return 'Do not count on it';
+      text = 'Do not count on it';
       break;
     case 5:
-      return 'My sources say no';
+      text = 'My sources say no';
       break;
     case 6:
-      return 'Outlook not so good';
+      text = 'Outlook not so good';
       break;
     case 7:
-      return 'Signs point to yes';
+      text = 'Signs point to yes';
       break;
     default:
-      return 'Error. Try again';
-      break;
+      text = 'Error. Try again';
   }
-}
-function checkAns() {
-  para.innerText = generateAnswer();
+  para.innerText = text;
   main.appendChild(para);
 }

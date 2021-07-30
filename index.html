@@ -3,16 +3,17 @@
     <head>
         <title>Magic 8 Ball</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="script.js" defer></script>
+        <script src="magic8ball.js" defer></script>
     </head>
     <body>
       <main>
         <h1>Magic 8 Ball</h1>
-        <label for="textName">Enter Name: </label>
-        <input id="textName" type="text">
+        <p>Ask the Magic 8 Ball any question your heart desires.</p>
+        <!-- <label for="textName">Enter Name: </label>
+        <input id="textName" type="text"><br><br> -->
         <label for="textQuestion">Enter Question: </label>
         <input id="textQuestion" type="text">
-        <button onClick={checkAns()}>Find Answer</button>
+        <button onClick={findAns()}>Find Answer</button>
         <p></p>
       </main>
         </body>
